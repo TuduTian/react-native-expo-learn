@@ -14,7 +14,7 @@ const ButtonNavigator = () => {
                 style={{
                   fontFamily: 'iconfont',
                   color: fcolor,
-                  fontSize: 24,
+                  fontSize: 30,
                 }}>
                 {ButtonConfig.map(item => {
                   if (item.name == route.name) {

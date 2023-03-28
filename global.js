@@ -29,7 +29,6 @@ global.pxw = function getWidthDp(uiEleWidthPx) {
 
 //直接传设计稿元素高度 (当是正方形元素的时候用一个比例来算)
 global.pxh = function getHeightDp(uiEleHeightPx) {
-  console.log((uiEleHeightPx * deviceHeightDp) / uiHeightPx);
   return (uiEleHeightPx * deviceHeightDp) / uiHeightPx;
 };
 
@@ -42,3 +41,5 @@ global.font = function getFontDp(number) {
 // 如果是ios  不是ios 就只有这两种情况
 global.isIOS = Platform.OS == 'ios';
 global.isAnd = Platform.OS == 'android'
+
+global.width   = Dimensions.get('window')
